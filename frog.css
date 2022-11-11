@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#myVideo {
+  position: absolute;
+  z-index: -100;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(0.5);
+}
+
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Press Start 2P", cursive;
+  flex-direction: column;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+}
+span {
+  margin-top: 2rem;
+  max-width: 50%;
+  line-height: 120%;
+}
+a {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  animation: colorPop 2s linear infinite;
+  align-items: center;
+  background-color: white;
+}
+@keyframes colorPop {
+  0%,
+  100% {
+    color: white;
+    background: rgb(231, 50, 18);
+    transform: scale(1);
+  }
+  10%,
+  90% {
+    color: black;
+    background: yellow;
+  }
+  20%,
+  80% {
+    color: white;
+    background: rgb(98, 98, 255);
+  }
+  30%,
+  70% {
+    color: white;
+    background: rgb(252, 34, 168);
+  }
+  35%,
+  65% {
+    color: black;
+    background: rgb(255, 85, 141);
+  }
+  40%,
+  70% {
+    color: white;
+    background: rgb(234, 6, 255);
+  }
+  50% {
+    color: black;
+    background: white;
+    transform: scale(1.2);
+  }
+}
